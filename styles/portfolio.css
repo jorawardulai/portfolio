@@ -61,7 +61,6 @@ body {
   border-radius: 2px;
 }
 
-/* Responsive nav */
 @media (max-width: 768px) {
   .burger {
     display: flex;
@@ -74,13 +73,15 @@ body {
     background-color: #181818;
     height: 100vh;
     width: 220px;
-    flex-direction: column;
+    display: flex;              /* Important pour activer flexbox */
+    flex-direction: column;     /* Empiler verticalement */
     align-items: flex-start;
     padding: 2rem 1rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
     box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+    gap: 1rem;                  /* Espacement entre liens */
   }
 
   .nav-right.active {
@@ -88,8 +89,8 @@ body {
   }
 
   .nav-right a {
-    margin: 1rem 0;
     font-size: 1.2rem;
+    /* margin verticale inutile ici si tu utilises gap */
   }
 }
 
