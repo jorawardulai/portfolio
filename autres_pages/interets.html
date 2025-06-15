@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jorawar DULAI - Centres d'intérêt</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+  <style>
+    .centered-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .centered-section h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .interest-list-container {
+      max-width: 400px; 
+      width: 100%;
+    }
+
+    .interest-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+
+    .interest-list li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="../accueil/portfolio.html" class="nav-logo desktop-only">Accueil</a>
+    </div>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-right" id="nav-links">
+      <a href="../autres_pages/competences.html">Compétences</a>
+      <a href="../autres_pages/projets.html">Projets</a>
+      <a href="../autres_pages/contact.html">Contact</a>
+      <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+      <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+    </div>
+  </nav>
+
+  <div class="centered-section">
+    <h2 style="color: #fff;">Centres d’intérêt</h2>
+    <div class="interest-list-container">
+      <ul class="interest-list" style="color: #fff;">
+        <li>Je pratique du sport, le Rink Hockey. Ce qui favorise l'esprit d'équipe et la discipline</li>
+        <li>Les visites culturelles. Je suis passionné par la découverte des musées et monuments historiques, ce qui nourrit ma curiosité et enrichit ma culture générale.</li>
+        <li>Le harmonium. Je pratique dela musique depuis mes 10 ans. Ce qui renforce ma patience et ma discipline.</li>
+        <li>Passionné pour les documentaires et films historiques depuis l'école primaire, j'aime me cultiver davantage sur l'histoire. </li>
+        <li>Gestion d’une association socio-culturelle à but non lucratif : SIKH YOUTH FRANCE</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

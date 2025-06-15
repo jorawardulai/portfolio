@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences - Jorawar DULAI</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+  <style>
+    .skills-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: left;
+  background-color: #222; /* fond légèrement plus clair pour contraste */
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(50, 150, 255, 0.4);
+  color: #e0e0e0;
+}
+
+.hardskills-grid {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.skills-group {
+  flex: 1;
+}
+
+.lower-skills {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.lower-skills .skills-group {
+  flex: 1;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c0d8ff;
+}
+
+.softskills-section {
+  margin-top: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #222;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(50, 150, 255, 0.4);
+  color: #e0e0e0;
+}
+
+.softskills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #c0d8ff;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #80c0ff;
+  margin-bottom: 1.5rem;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="../accueil/portfolio.html" class="nav-logo desktop-only">Accueil</a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+<div class="nav-right" id="nav-links">
+  <a href="../autres_pages/competences.html">Compétences</a>
+  <a href="../autres_pages/projets.html">Projets</a>
+  <a href="../autres_pages/contact.html">Contact</a>
+  <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+  <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+</div>
+</nav>
+
+<section class="section skills-container">
+
+  <h2>Hard Skills</h2>
+
+  <div class="hardskills-grid">
+
+    <div class="skills-group">
+      <h3>Frontend</h3>
+      <ul class="skills-list">
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>React (bases)</li>
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <h3>Backend</h3>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>Python/Django</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <h3>Bases de données</h3>
+      <ul class="skills-list">
+        <li>SQL</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="lower-skills">
+    <div class="skills-group">
+      <h3>Réseaux</h3>
+      <ul class="skills-list">
+        <li>Notions de TCP/IP, routage, DHCP</li>
+        <li>Modèle OSI</li>
+        <li>Virtualisation : NFS, NIS, VPN</li>
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <h3>Autres</h3>
+      <ul class="skills-list">
+        <li>Git / GitHub</li>
+        <li>Linux (Ubuntu, ligne de commande)</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section class="section softskills-section skills-container">
+  <h2>Soft Skills</h2>
+  <ul class="skills-list softskills-list">
+    <li>Autonomie</li>
+    <li>Rigueur</li>
+    <li>Curiosité</li>
+    <li>Travail en équipe</li>
+    <li>Esprit d'analyse</li>
+    <li>Adaptation</li>
+  </ul>
+</section>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jorawar DULAI - Projets</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="../accueil/portfolio.html" class="nav-logo desktop-only">Accueil</a>
+    </div>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-right" id="nav-links">
+      <a href="../autres_pages/competences.html">Compétences</a>
+      <a href="../autres_pages/projets.html">Projets</a>
+      <a href="../autres_pages/contact.html">Contact</a>
+      <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+      <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+    </div>
+  </nav>
+
+  <section class="section projects-container">
+    <h1>Mes Projets</h1>
+
+    <article class="project-item">
+      <h2>Développement d'une application - Groupe de 4</h2>
+      <p><em>2e année - BUT Informatique</em></p>
+      <p>Développement d’une application web permettant de réserver des Vélib avec React en frontend et une API REST en backend avec Django.</p>
+      <p><strong>Fonctionnalités :</strong>
+        <li>Inscription/connexion à l’application</li>
+        <li>Localisation de la station la plus proche</li>
+        <li>Réservation/annulation de Vélib depuis l’interface utilisateur</li>
+        <li>Consultation de l’historique des réservations</li>
+        <li>Modification des informations de l’utilisateur</li>
+      </p>
+      <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, MySQL, React.js, Django, API REST, Docker</p>
+    </article>
+
+    <article class="project-item">
+      <h2>Site Exposition Musée de La Marine - Groupe de 6</h2>
+      <p><em>1ère année - BUT Informatique</em></p>
+      <p>Ce projet consistait à concevoir un site web pour présenter une exposition du Musée National de la Marine. Nous avions mis en place un site dynamique qui valorise les œuvres exposées.</p>
+      <p><strong>Technologies utilisées :</strong> HTML, CSS, Javascript</p>
+    </article>
+
+    <article class="project-item">
+      <h2>Calculatrice Java - Binôme</h2>
+      <p><em>1ère année — BUT informatique</em></p>
+      <p>Développement d'une calculatrice en ligne de commande avec Java, suivant les principes de la programmation orientée objet.</p>
+      <p><strong>Technologies utilisées :</strong> Java, diagramme UML</p>
+    </article>
+
+    <article class="project-item">
+      <h2>Nuit de l'Info édition 2024 - Groupe de 10</h2>
+      <p><em>Projet personnel</em></p>
+      <p>Création d’une application interactive pour sensibiliser à la pollution de l’océan. Coordination de l’équipe pour la fusion des différents éléments.</p>
+      <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript</p>
+    </article>
+  </section>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
