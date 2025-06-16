@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Langues - Jorawar DULAI</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="../index.html" class="nav-logo desktop-only">Accueil</a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-right" id="nav-links">
+    <a href="../autres_pages/competences.html">Compétences</a>
+    <a href="../autres_pages/experiences.html">Expériences</a>
+    <a href="../autres_pages/projets.html">Projets</a>
+    <a href="../autres_pages/parcours.html">Parcours scolaire</a>
+    <a href="../autres_pages/langues.html">Langues</a>
+    <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+    <a href="../autres_pages/contact.html">Contact</a>
+    <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+  </div>
+</nav>
+
+<section class="section projects-container">
+    <h1>Langues</h1>
+  
+    <article class="project-item">
+      <ul style="color: #fff;">
+        <li><strong>Anglais :</strong> Niveau professionnel</li>
+        <li><strong>Français :</strong> Bilingue</li>
+        <li><strong>Punjabi :</strong> Bilingue</li>
+        <li><strong>Hindi :</strong> Courant</li>
+        <li><strong>Espagnol :</strong> Niveau scolaire</li>
+      </ul>
+    </article>
+  </section>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

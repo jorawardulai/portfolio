@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcours scolaire - Jorawar DULAI</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="../index.html" class="nav-logo desktop-only">Accueil</a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-right" id="nav-links">
+    <a href="../autres_pages/competences.html">Compétences</a>
+    <a href="../autres_pages/experiences.html">Expériences</a>
+    <a href="../autres_pages/projets.html">Projets</a>
+    <a href="../autres_pages/parcours.html">Parcours scolaire</a>
+    <a href="../autres_pages/langues.html">Langues</a>
+    <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+    <a href="../autres_pages/contact.html">Contact</a>
+    <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+  </div>
+</nav>
+
+<section class="section projects-container">
+    <h1>Parcours scolaire</h1>
+  
+    <article class="project-item">
+      <h2>IUT de Villetaneuse – BUT Informatique</h2>
+      <p><em>Depuis septembre 2023</em></p>
+      <p><strong>Parcours RACDV (Réalisation d’applications : conception, développement, validation)</strong></p>
+      <ul style="color: #fff;">
+        <li>Formation professionnalisante orientée développement logiciel</li>
+        <li>Apprentissage des langages, de l'algorithmique, des bases de données, de la gestion de projet et des réseaux</li>
+        <li>Actuellement en 2<sup>e</sup> année</li>
+      </ul>
+    </article>
+  
+    <article class="project-item">
+      <h2>Lycée Blaise Cendrars – Sevran</h2>
+      <p><em>2020 – 2023</em></p>
+      <p><strong>Bac Général - Spécialités Mathématiques et Physique-Chimie</strong></p>
+      <ul style="color: #fff;">
+        <li>Obtention du baccalauréat avec mention Assez Bien</li>
+        <li>Développement de l’esprit logique et scientifique</li>
+      </ul>
+    </article>
+  
+    <article class="project-item">
+      <h2>Collège – 2016 à 2020</h2>
+      <p><strong>Diplôme national du brevet</strong></p>
+      <ul style="color: #fff;">
+        <li>Brevet des collèges obtenu avec mention Très Bien</li>
+        <li>Premiers projets et travaux en groupe</li>
+      </ul>
+    </article>
+  </section>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

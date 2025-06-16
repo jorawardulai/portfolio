@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expériences - Jorawar DULAI</title>
+  <link rel="stylesheet" href="../styles/portfolio.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="../index.html" class="nav-logo desktop-only">Accueil</a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-right" id="nav-links">
+    <a href="../autres_pages/competences.html">Compétences</a>
+    <a href="../autres_pages/experiences.html">Expériences</a>
+    <a href="../autres_pages/projets.html">Projets</a>
+    <a href="../autres_pages/parcours.html">Parcours scolaire</a>
+    <a href="../autres_pages/langues.html">Langues</a>
+    <a href="../autres_pages/interets.html">Centres d'intérêt</a>
+    <a href="../autres_pages/contact.html">Contact</a>
+    <a href="../assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
+  </div>
+</nav>
+
+<section class="section projects-container">
+    <h1>Expériences professionnelles</h1>
+
+    <article class="project-item">
+      <h2>Stage Chez METM, Rosny-Sous-Bois</h2>
+      <p><em>2 mois - 01/2025 au 03/2025</em></p>
+      <p><strong>Développeur WEB CMS Shopify </strong>
+        <ul style="color: #fff;">
+        <li>Optimisation d’une boutique e-commerce via le CMS Shopify : amélioration du SEO, de l’accessibilité et de la performance</li>
+        <li>Développement d’un script d’automatisation du formatage de disques durs (le formatage durait 2-3 min et dure à présent 10-15 sec)</li>
+        <li>Création d’un site vitrine pour le service de réimpression de claviers d’ordinateurs (Shopify, Liquid, HTML/CSS)</li>
+        </ul>
+      </p>
+      <p><strong>Compétences utilisées :</strong> HTML, CSS, JavaScript, Liquid, Shopify</p>
+    </article>
+
+    <article class="project-item" style="color: #fff;">
+        <h2>Job étudiant - SAS SHAL, La Courneuve</h2>
+        <p><em>2 mois - 07/2024 au 08/2024</em></p>
+        <p><strong>Manutentionnaire</strong></p>
+        <ul style="color: #fff;">
+          <li>Gestion du stock et préparation de commandes</li>
+          <li>Respect des consignes de sécurité en entrepôt</li>
+          <li>Travail d’équipe et adaptation au rythme soutenu</li>
+        </ul>
+        <p><strong>Compétences développées :</strong> Sens de l'organisation, travail d'équipe, communication</p>
+      </article>
+
+      <article class="project-item">
+        <h2>Stage de 3e - Carrefour</h2>
+        <p><em>1 semaine - 12/2019</em></p>
+        <p><strong>Découverte de la grande distribution</strong></p>
+        <ul style="color: #fff;">
+          <li>Observation des métiers : caisse, mise en rayon, gestion des stocks</li>
+          <li>Premier contact avec le monde professionnel</li>
+        </ul>
+        <p><strong>Compétences découvertes :</strong> Communication, ponctualité, respect des consignes</p>
+      </article>
+  </section>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
