@@ -1,7 +1,10 @@
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('nav-links');
+const reveals = document.querySelectorAll(".reveal");
 
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+window.addEventListener("scroll", () => {
+  reveals.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.classList.add("active");
+    }
+  });
 });
-

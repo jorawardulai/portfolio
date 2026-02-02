@@ -2,46 +2,284 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jorawar DULAI - Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jorawar Dulai | Portfolio</title>
   <link rel="stylesheet" href="styles/portfolio.css" />
+  
 </head>
+
 <body>
-<nav class="navbar">
-  <div class="nav-left">
-    <a href="index.html" class="nav-logo">Accueil</a>
-  </div>
 
- 
-  <div class="burger" id="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+<header>
+  <nav>
+    <strong>JD</strong>
+    <div>
+      <a href="#formation">Formation</a>
+      <a href="#experience">Expérience</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-  <div class="nav-right" id="nav-links">
-    <a href="autres_pages/competences.html">Compétences</a>
-    <a href="autres_pages/experiences.html">Expériences</a>
-    <a href="autres_pages/projets.html">Projets</a>
-    <a href="autres_pages/parcours.html">Parcours scolaire</a>
-    <a href="autres_pages/langues.html">Langues</a>
-    <a href="autres_pages/interets.html">Centres d'intérêt</a>
-    <a href="autres_pages/contact.html">Contact</a>
-    <a href="assets/CV_DULAI_Jorawar_BUT_informatique.pdf" download>CV</a>
-  </div>
-</nav>
-
-<div class="banner-background"></div>
-
-<section class="hero section">
-  <h1>Bienvenue !</h1>
-  <div class="hero-text">
-    <p>Je m'appelle <strong>Jorawar DULAI</strong> et je suis actuellement en deuxième année du BUT Informatique à l'IUT de Villetaneuse.</p>
-    <p>Je me suis intéressé à l'informatique au lycée, j’avais compris à quel point c’est un domaine d’avenir. Que ce soit pour automatiser des tâches, faciliter la vie des gens, ou encore créer des outils innovants, je trouve ça passionnant.</p>
-    <p>Ce que j’aime, c’est résoudre des problèmes concrets avec du code, apprendre de nouvelles technos, et voir directement le résultat de ce que je développe.</p>
-    <p>Basé sur la région parisienne, je suis actuellement en recherche d’une <strong>alternance de 12 mois à partir de septembre 2025</strong> dans le développement.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Jorawar <span>Dulai</span> (Joe)</h1>
+    <p>
+      Étudiant en 3ᵉ année de BUT Informatique, je recherche un <strong>stage de 4 mois dans le développement d'applications web et mobiles ou le domaine de la data</strong>.
+      Passionné par le développement d’applications, je souhaite ensuite poursuivre mes études
+      en <strong>Master orienté Big Data, Data Engineering et Machine Learning</strong>.
+    </p>
+    <a class="btn" href="assets/CV_Jorawar_DULAI_stage_developpeur_full_stack.pdf" download>Télécharger mon CV</a>
   </div>
 </section>
-<script src="styles/portfolio.js"></script>
+
+<!-- FORMATION -->
+<section id="formation" class="reveal">
+  <h2>Formation</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>BUT Informatique</h4>
+      <p>IUT de Villetaneuse · Sorbonne Paris Nord</p>
+      <p>2023 – en cours · Parcours RACDV</p>
+    </div>
+    <div class="card">
+      <h4>Baccalauréat Général</h4>
+      <p>Lycée Blaise Cendrars</p>
+      <p>2020 – 2023 · Spécialités Mathématiques & Physique-Chimie</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+  <h2>Expériences professionnelles</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>Stagiaire développeur – METM</h4>
+      <span class="project-meta">Jan 2025 – Mars 2025</span>
+      <ul>
+        <li>Développement d’un script d’automatisation du formatage de disques en BAT (le formatage
+durait 2-3 min et dure à présent 10-15 sec).</li>
+        <li>Refonte UI/UX d’une boutique Shopify avec PageSpeed Insights : SEO, accessibilité,
+performance.</li>
+        <li>Création d’un site vitrine (Liquid, HTML/CSS) pour un service informatique interne</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets" class="reveal">
+  <h2>Projets</h2>
+
+  <h3>Projets universitaires</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Application fullstack de réservation de vélos - React / Django / Leaflet</h4>
+      <ul>
+        <li>Développement d’une application web inspirée de Vélib</li>
+        <li>Authentification des utilisateurs (inscription / connexion)</li>
+        <li>Réservation, annulation et historique des trajets</li>
+        <li>API REST développée avec Django et base de données PostgreSQL</li>
+        <li>Carte interactive des stations avec Leaflet</li>
+        <li>Filtres, validations côté serveur et gestion des erreurs</li>
+        <li>Travail en équipe avec Git (branches, merges)</li>
+      </ul>
+    </div>
+
+  <div class="card">
+  <h4>NoSQL – Communication temps réel avec Redis (Pub/Sub)</h4>
+    <ul>
+      <li>Mise en place d’une base NoSQL avec Redis</li>
+      <li>Développement d’un Proof of Concept simulant une communication temps réel</li>
+      <li>Échange de messages entre un “manager” et un “livreur” via le modèle Pub/Sub</li>
+      <li>Manipulation des données avec Python</li>
+      <li>Interaction avec Redis pour tester la diffusion et la réception des messages</li>
+    </ul>
+  </div>
+
+    <div class="card">
+      <h4>Base de données – PostgreSQL</h4>
+      <ul>
+        <li>Analyse du besoin et modélisation (MCD / MLD)</li>
+        <li>Création des tables, clés primaires et étrangères</li>
+        <li>Import automatisé de données depuis des fichiers CSV</li>
+        <li>Rédaction de requêtes SQL complexes (jointures, agrégats)</li>
+        <li>Rédaction d’un rapport technique</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Recueil des besoins & prototypage</h4>
+      <ul>
+        <li>Entretiens pour comprendre les besoins fonctionnels</li>
+        <li>Rédaction d’un cahier des charges</li>
+        <li>Définition des fonctionnalités principales</li>
+        <li>Réalisation d’un prototype avant développement</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Projets personnels</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Machine Learning – Détection de spam</h4>
+      <ul>
+        <li>Projet de classification de messages SMS en Python</li>
+        <li>Prétraitement et nettoyage des données</li>
+        <li>Entraînement d’un modèle avec scikit-learn</li>
+        <li>Évaluation des performances (≈ 97 % de précision)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Application mobile sportive – Flutter</h4>
+      <ul>
+        <li>Développement d’une application mobile de suivi sportif</li>
+        <li>Création de profils utilisateurs et parcours d’onboarding</li>
+        <li>Stockage local sécurisé avec SQLite</li>
+        <li>Calcul d’indicateurs de santé (IMC, métabolisme)</li>
+        <li>Interfaces responsives basées sur des maquettes</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Jeu d’esquive de météorites – Python / Pygame</h4>
+      <ul>
+        <li>Développement d’un jeu 2D avec Pygame</li>
+        <li>Contrôle d’un vaisseau spatial et déplacements en temps réel</li>
+        <li>Génération aléatoire de météorites</li>
+        <li>Gestion des collisions et du score</li>
+        <li>Boucle de jeu et logique temps réel</li>
+      </ul>
+  </div>
+  <div class="card">
+  <h4>Application web interactive – Sensibilisation à la pollution des océans (Nuit de l’Info 2024)</h4>
+  <ul>
+    <li>Participation à la Nuit de l’Info – édition 2024 (défi national en équipe sur une nuit)</li>
+    <li>Développement d’une application web interactive de sensibilisation à la pollution des océans</li>
+    <li>Conception et intégration de l’interface en HTML, CSS et JavaScript</li>
+    <li>Mise en place de contenus pédagogiques interactifs pour informer l’utilisateur de manière ludique</li>
+    <li>Travail collaboratif en équipe avec répartition des rôles et gestion du temps sous contrainte</li>
+  </ul>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="reveal">
+  <h2>Compétences</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>Développement web & mobile</h4>
+      <ul>
+        <li>Java, JavaScript, TypeScript</li>
+        <li>React.js, Vue.js, Node.js</li>
+        <li>Django REST, PHP</li>
+        <li>Flutter / Dart</li>
+        <li>HTML, CSS</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Data & Machine Learning</h4>
+      <ul>
+        <li>Python</li>
+        <li>pandas, scikit-learn</li>
+        <li>TF-IDF, classification</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Bases de données</h4>
+      <ul>
+        <li>PostgreSQL, MySQL</li>
+        <li>MongoDB</li>
+        <li>Redis</li>
+        <li>SQLite</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>DevOps & outils</h4>
+      <ul>
+        <li>Git / GitHub</li>
+        <li>Docker, Jenkins</li>
+        <li>CI / CD</li>
+        <li>Linux</li>
+        <li>VS Code, NetBeans</li>
+        <li>VirtualBox</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Méthodologies & systèmes</h4>
+      <ul>
+        <li>Agile / Scrum</li>
+        <li>Gestion de projet</li>
+        <li>Documentation, clean code</li>
+        <li>Serveur LAMP</li>
+        <li>Réseaux TCP/IP</li>
+        <li>Gestion des utilisateurs</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- LANGUES -->
+<section class="reveal">
+  <h2>Langues</h2>
+  <div class="cards">
+    <div class="card">Anglais – B2</div>
+    <div class="card">Français – Bilingue</div>
+    <div class="card">Hindi – Courant</div>
+    <div class="card">Punjabi – Bilingue</div>
+    <div class="card">Espagnol – Scolaire</div>
+  </div>
+</section>
+
+<!-- CENTRES -->
+<section class="reveal">
+  <h2>Centres d’intérêt</h2>
+  <div class="cards">
+    <div class="card interest">🏑 Sport : rink hockey, musculation</div>
+    <div class="card interest">🎵 Musique : harmonium</div>
+    <div class="card interest">🏛️ Art & patrimoine</div>
+    <div class="card interest">🎬 Documentaires et films historiques</div>
+    <div class="card interest">🤝 Engagement associatif : Sikh Youth France</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <p>Email : jorawar.dulai@email.com</p>
+  <p>LinkedIn / GitHub à ajouter</p>
+</section>
+
+<footer>
+  © 2026 · Jorawar Dulai
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+  window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
