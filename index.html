@@ -3,47 +3,452 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jorawar Dulai | Portfolio</title>
-  <link rel="stylesheet" href="styles/portfolio.css" />
-  
+  <title>Jorawar Dulai | Portfolio BUT 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="styles/portfolio.css">
+  <link href="styles/portfolio.js">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
+<!-- NAV -->
 <header>
   <nav>
-    <strong>JD</strong>
-    <div>
-      <a href="#formation">Formation</a>
-      <a href="#experience">Expérience</a>
+    <span class="nav-logo">JD</span>
+    <div class="nav-links">
+      <a href="#intro">Parcours</a>
+      <a href="#competences-but">Compétences</a>
+      <a href="#stage-sncf">Stage SNCF</a>
+      <a href="#stage">Stage METM</a>
+      <a href="#conclusion">Bilan</a>
       <a href="#projets">Projets</a>
-      <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- ══════════ HERO ══════════ -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Jorawar <span>Dulai</span> (Joe)</h1>
-    <p>
-      Étudiant en 3ᵉ année de BUT Informatique, je recherche un <strong>stage de 4 mois dans le développement d'applications web et mobiles ou le domaine de la data</strong>.
-      Passionné par le développement d’applications, je souhaite ensuite poursuivre mes études
-      en <strong>Master orienté Big Data, Data Engineering et Machine Learning</strong>.
+    <span class="hero-eyebrow">Portfolio</span>
+    <h1>Jorawar <span class="accent">Dulai</span><br>— Joe</h1>
+    <p class="hero-desc">
+      Étudiant en 3ᵉ année de <strong>BUT Informatique (parcours RACDV)</strong> à l'IUT de Villetaneuse, Sorbonne Paris Nord.
+      Ce portfolio documente ma progression sur les six compétences du référentiel, les apprentissages issus de mes SAÉ, et la conclusion que j'en retire. Prochaine étape : <strong>programme DICASI au CNAM Paris</strong> pour devenir chef de projet informatique.
     </p>
-    <a class="btn" href="assets/CV_Jorawar_DULAI_stage_developpeur_full_stack.pdf" download>Télécharger mon CV</a>
+    <a class="btn btn-ghost" href="#intro">Découvrir le portfolio ↓</a>
   </div>
 </section>
 
-<!-- FORMATION -->
+<!-- ══════════ INTRODUCTION ══════════ -->
+<hr class="divider">
+<section id="intro" class="reveal">
+  <span class="section-label">Introduction</span>
+  <h2>Mon parcours, mes ambitions</h2>
+  <p class="section-intro">Pourquoi l'informatique, où j'en suis, et vers où je vais.</p>
+
+  <div class="intro-grid">
+    <div class="intro-block">
+      <h3>Logique du parcours</h3>
+      <p>Après un baccalauréat général avec spécialités Mathématiques et Physique-Chimie, j'ai choisi le BUT Informatique pour allier rigueur scientifique et création concrète. Le parcours RACDV (Réalisation d'Applications, Conception, Développement et Validation) m'a permis de toucher à l'ensemble du cycle de vie d'un logiciel : de l'expression du besoin jusqu'au déploiement, en passant par la conception de bases de données, l'administration système et la gestion de projet.</p>
+    </div>
+    <div class="intro-block">
+      <h3>Choix d'orientation</h3>
+      <p>Ce qui m'a orienté vers l'informatique, c'est la satisfaction de résoudre des problèmes réels avec du code. Dès mes premiers projets, j'ai pris goût à construire des applications qui fonctionnent, qui sont utilisées et qui font gagner du temps. Mon stage chez METM où un script que j'ai écrit a réduit la durée d'un formatage de disque de plusieurs minutes à quelques secondes a confirmé cette orientation pragmatique.</p>
+    </div>
+    <div class="intro-block">
+      <h3>Ambitions professionnelles</h3>
+      <p>Mon objectif est de devenir <strong style="color:var(--text)">chef de projet informatique</strong> : piloter des projets de bout en bout, faire le lien entre les équipes techniques et les enjeux métier, et accompagner la livraison de solutions de qualité. En septembre 2026, j'intègre le programme <strong style="color:var(--text)">DICASI au CNAM Paris</strong> (Diplôme d'Ingénieur Concepteur Architecte en Systèmes d'Information), qui me permettra d'acquérir les compétences en gestion de projet, architecture SI et management nécessaires à cette ambition.</p>
+    </div>
+    <div class="intro-block">
+      <h3>Ce portfolio</h3>
+      <p>Ce document est organisé autour des six compétences du référentiel BUT Informatique. Pour chacune, je présente les SAÉ et projets mobilisés, les outils utilisés, ce que j'ai réellement appris, et le regard critique que je pose sur ma propre progression. Ce n'est pas un simple catalogue de projets : c'est un bilan honnête, avec ses zones de maîtrise et ses marges de progression.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 6 COMPÉTENCES BUT ══════════ -->
+<hr class="divider">
+<section id="competences-but" class="reveal">
+  <span class="section-label">Référentiel BUT Informatique</span>
+  <h2>Les six compétences</h2>
+  <p class="section-intro">Cliquez sur chaque compétence pour lire la synthèse réflexive, les SAÉ associées et l'auto-évaluation.</p>
+
+  <div class="comp-grid">
+
+    <!-- C1 : RÉALISER -->
+    <div class="comp-card" data-level="80">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 01</div>
+          <div class="comp-title">Réaliser un développement d'application</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+        <div class="comp-section-title">Synthèse</div>
+        <p>C'est la compétence que j'ai la plus travaillée. De la SAÉ Vélib (application fullstack React / Django) à l'application mobile Flutter, en passant par le jeu Pygame, j'ai développé une vraie capacité à produire du code lisible, structuré et fonctionnel. J'ai appris à découper un problème en composants, à gérer les états, à écrire des API REST et à tester mes développements.</p>
+        <p>Mon principal point de vigilance reste la couverture de tests : j'écris rarement des tests unitaires en dehors des contraintes imposées par les SAÉ. C'est un réflexe à ancrer davantage.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">App Vélib – React / Django</span>
+          <span class="tag">App mobile Flutter</span>
+          <span class="tag">Détection spam – scikit-learn</span>
+          <span class="tag">Jeu Pygame</span>
+          <span class="tag">Nuit de l'Info 2024</span>
+        </div>
+
+        <div class="comp-section-title">Outils & langages</div>
+        <div class="tag-list">
+          <span class="tag violet">JavaScript / TypeScript</span>
+          <span class="tag violet">React.js</span>
+          <span class="tag violet">Django REST</span>
+          <span class="tag violet">Flutter / Dart</span>
+          <span class="tag violet">Python</span>
+          <span class="tag violet">HTML / CSS</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>Je suis à l'aise avec le développement fullstack et mobile. Ce que je dois encore travailler : la mise en place systématique de tests, et la documentation du code dès la phase de développement plutôt qu'en fin de projet.</p>
+      </div>
+    </div>
+
+    <!-- C2 : OPTIMISER -->
+    <div class="comp-card" data-level="60">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 02</div>
+          <div class="comp-title">Optimiser des applications informatiques</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+
+        <div class="comp-section-title">Synthèse</div>
+        <p>Cette compétence s'est manifestée concrètement lors de mon stage chez METM : j'ai réécrit un script de formatage de disques en BAT, réduisant le temps d'exécution de 2/3 minutes à 10/15 secondes. J'ai également travaillé sur des optimisations front-end avec PageSpeed Insights (SEO, accessibilité, performance).</p>
+        <p>En cours, les SAÉ liées aux algorithmes et à la complexité m'ont appris à distinguer une solution qui fonctionne d'une solution qui fonctionne bien. Je reste cependant moins à l'aise sur les optimisations bas niveau (mémoire, cache) que sur l'optimisation applicative.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">Script BAT METM</span>
+          <span class="tag">Optimisation Shopify – PageSpeed</span>
+          <span class="tag">Algorithmes & complexité</span>
+        </div>
+
+        <div class="comp-section-title">Outils</div>
+        <div class="tag-list">
+          <span class="tag violet">PageSpeed Insights</span>
+          <span class="tag violet">Batch (BAT)</span>
+          <span class="tag violet">Python profiling</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>Mes optimisations sont souvent empiriques (mesurer, modifier, remesuerer) plutôt que fondées sur une analyse théorique préalable. Je veux progresser sur la lecture et l'analyse de complexité algorithmique, et intégrer le profiling dès le début d'un projet.</p>
+      </div>
+    </div>
+
+    <!-- C3 : ADMINISTRER -->
+    <div class="comp-card" data-level="55">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 03</div>
+          <div class="comp-title">Administrer des systèmes informatiques communicants</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+
+        <div class="comp-section-title">Synthèse</div>
+        <p>Les SAÉ réseau et système m'ont permis de configurer des serveurs LAMP, de gérer des utilisateurs Linux, de comprendre TCP/IP et de travailler en environnement virtualisé (VirtualBox). J'ai également utilisé Docker dans des projets de déploiement et mis en place des pipelines CI/CD basiques avec Jenkins.</p>
+        <p>C'est la compétence où mon niveau est le plus hétérogène : à l'aise avec Linux et Docker, moins expérimenté sur les aspects réseau avancés (routage, firewall complexe) ou la supervision de systèmes en production.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">SAÉ Réseau TCP/IP</span>
+          <span class="tag">Serveur LAMP</span>
+          <span class="tag">CI/CD Jenkins</span>
+          <span class="tag">VirtualBox</span>
+        </div>
+
+        <div class="comp-section-title">Outils</div>
+        <div class="tag-list">
+          <span class="tag violet">Linux</span>
+          <span class="tag violet">Docker</span>
+          <span class="tag violet">Jenkins</span>
+          <span class="tag violet">VirtualBox</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>L'administration système reste pour moi un support aux projets de développement plutôt qu'une fin en soi. Je dois approfondir la surveillance et la gestion des incidents en production — des sujets que mon Master me permettra d'explorer davantage.</p>
+      </div>
+    </div>
+
+    <!-- C4 : GÉRER -->
+    <div class="comp-card" data-level="75">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 04</div>
+          <div class="comp-title">Gérer des données de l'information</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+
+        <div class="comp-section-title">Synthèse</div>
+        <p>La gestion des données est l'une de mes compétences les plus développées, nourrie par des SAÉ variées : modélisation MCD/MLD, conception de schémas PostgreSQL, import CSV automatisé, requêtes SQL complexes, et PoC Redis Pub/Sub. En parallèle, mes projets personnels m'ont amené à travailler avec MongoDB, SQLite et scikit-learn sur des données réelles (classification de SMS).</p>
+        <p>Ce goût pour la donnée est d'ailleurs l'un des moteurs de ma volonté de poursuivre en Master Data Engineering / Machine Learning.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">SAÉ PostgreSQL – MCD/MLD</span>
+          <span class="tag">Redis Pub/Sub</span>
+          <span class="tag">Détection spam – pandas / TF-IDF</span>
+          <span class="tag">App Vélib – API REST + BDD</span>
+        </div>
+
+        <div class="comp-section-title">Outils</div>
+        <div class="tag-list">
+          <span class="tag violet">PostgreSQL</span>
+          <span class="tag violet">MongoDB</span>
+          <span class="tag violet">Redis</span>
+          <span class="tag violet">SQLite</span>
+          <span class="tag violet">pandas</span>
+          <span class="tag violet">scikit-learn</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>Je maîtrise bien la conception et l'interrogation de bases relationnelles. Ma marge de progression se situe dans les architectures Big Data (Spark, data pipelines) et la mise en production de modèles ML, que mon Master viendra compléter.</p>
+      </div>
+    </div>
+
+    <!-- C5 : CONDUIRE -->
+    <div class="comp-card" data-level="65">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 05</div>
+          <div class="comp-title">Conduire un projet</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+
+        <div class="comp-section-title">Synthèse</div>
+        <p>Les SAÉ de gestion de projet m'ont formé aux méthodologies Agile / Scrum, à la rédaction de cahiers des charges, à la réalisation de prototypes et à la conduite d'entretiens utilisateurs. La Nuit de l'Info 2024 a été un exercice intense : produire une application fonctionnelle en une nuit, en équipe, sous contrainte de temps.</p>
+        <p>Mon stage a également été une mise en situation réelle : identifier les besoins du client, proposer une solution, la livrer dans les délais.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">SAÉ Recueil des besoins & prototypage</span>
+          <span class="tag">Nuit de l'Info 2024</span>
+          <span class="tag">Stage METM</span>
+        </div>
+
+        <div class="comp-section-title">Outils</div>
+        <div class="tag-list">
+          <span class="tag violet">Agile / Scrum</span>
+          <span class="tag violet">Cahier des charges</span>
+          <span class="tag violet">Git / GitHub</span>
+          <span class="tag violet">Figma (maquettage)</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>Je suis à l'aise pour cadrer un projet et en assurer le suivi. Mon point de vigilance : la gestion du risque et la communication proactive avec le client quand les délais dérivent. C'est quelque chose que j'ai appris à la dure lors de mon stage, et que je veux systématiser.</p>
+      </div>
+    </div>
+
+    <!-- C6 : COLLABORER -->
+    <div class="comp-card" data-level="70">
+      <div class="comp-header" onclick="toggleComp(this)">
+        <div>
+          <div class="comp-num">Compétence 06</div>
+          <div class="comp-title">Collaborer au sein d'une équipe informatique</div>
+        </div>
+        <span class="comp-arrow">▾</span>
+      </div>
+      <div class="comp-body">
+
+        <div class="comp-section-title">Synthèse</div>
+        <p>La quasi-totalité de mes SAÉ se sont faites en équipe. J'ai appris à travailler avec Git en mode collaboratif (branches, pull requests, résolution de conflits), à me synchroniser avec des collègues sur une architecture commune, et à documenter mon code pour que les autres puissent l'utiliser. Mon engagement dans Sikh Youth France m'a également appris à organiser, déléguer et fédérer autour d'un projet collectif.</p>
+
+        <div class="comp-section-title">SAÉ & projets mobilisés</div>
+        <div class="tag-list">
+          <span class="tag">App Vélib – travail en équipe Git</span>
+          <span class="tag">Nuit de l'Info 2024</span>
+          <span class="tag">Stage METM</span>
+          <span class="tag">Engagement Sikh Youth France</span>
+        </div>
+
+        <div class="comp-section-title">Outils</div>
+        <div class="tag-list">
+          <span class="tag violet">Git / GitHub</span>
+          <span class="tag violet">Branches & merges</span>
+          <span class="tag violet">Documentation</span>
+          <span class="tag violet">Code review</span>
+        </div>
+
+        <div class="comp-section-title">Regard critique</div>
+        <p>Je collabore bien, mais j'ai tendance à prendre trop en charge plutôt qu'à déléguer. En entreprise, savoir distribuer les tâches et faire confiance aux autres est aussi important que de savoir coder. C'est un équilibre que je travaille activement.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ STAGE SNCF ══════════ -->
+<hr class="divider">
+<section id="stage-sncf" class="reveal">
+  <span class="section-label">Volet stage · BUT 3 — Stage en cours</span>
+  <h2>Stage chez SNCF Connect & Tech Services</h2>
+  <p class="section-intro">2025–2026 · Quality Analyst – Tests manuels & automatisés</p>
+
+  <div class="stage-band">
+    <h3>Contexte et missions principales</h3>
+    <p>SNCF Connect & Tech Services est la filiale digitale du groupe SNCF, en charge du développement et de la maintenance des outils numériques à destination des agents de terrain. J'interviens en tant que Quality Analyst sur les applications <strong style="color:var(--text)">Cosmo</strong> et <strong style="color:var(--text)">Equipage</strong>, utilisées au quotidien par les chefs de bord. Mon rôle couvre l'ensemble du cycle de test : rédaction, exécution, automatisation et suivi — dans un contexte Agile avec des sprints réguliers.</p>
+  </div>
+
+  <div class="stage-grid">
+    <div class="stage-block">
+      <h4 class="blue">Missions réalisées</h4>
+      <ul>
+        <li>Rédaction et exécution de cas de tests manuels sur les applications mobiles Cosmo et Equipage</li>
+        <li>Automatisation de tests mobiles avec <strong style="color:var(--text)">Maestro</strong> (scripts YAML) et <strong style="color:var(--text)">Appium</strong> (Robot Framework)</li>
+        <li>Suivi et gestion des anomalies dans <strong style="color:var(--text)">Squash TM</strong> et <strong style="color:var(--text)">Jira</strong></li>
+        <li>Participation active aux cérémonies Agile : daily, sprint review, rétrospectives</li>
+        <li>Communication et coordination avec les équipes développement pour la levée des bugs</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="positive">Points forts</h4>
+      <ul>
+        <li>Découverte concrète du métier de QA dans un grand groupe tech — écosystème professionnel riche</li>
+        <li>Montée en compétence rapide sur Maestro (YAML) et Robot Framework (Python)</li>
+        <li>Bonne intégration dans l'équipe : participation aux réunions, communication fluide avec les devs</li>
+        <li>Compréhension fine des enjeux métier : les applications testées sont critiques pour les chefs de bord en service</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="warning">Points de vigilance</h4>
+      <ul>
+        <li>L'automatisation mobile (Appium) a nécessité un temps d'adaptation plus long que prévu — la configuration de l'environnement était complexe</li>
+        <li>Maintenir une couverture de tests cohérente entre les versions des applications demande une rigueur de documentation que je continue à développer</li>
+        <li>Prendre du recul sur la priorisation des tests : tous les cas ne se valent pas en termes de risque métier</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="violet">Acquis pour la suite</h4>
+      <ul>
+        <li>La qualité logicielle est une discipline à part entière, pas un simple filet de sécurité en fin de projet</li>
+        <li>Écrire des tests automatisés lisibles et maintenables est aussi exigeant qu'écrire du bon code de production</li>
+        <li>La communication entre QA et développeurs est clé : formuler un bug clairement fait gagner du temps à toute l'équipe</li>
+        <li>Travailler sur des applications critiques (terrain SNCF) renforce le sens des responsabilités</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:1.5rem;">
+    <p style="color:var(--muted); font-size:0.92rem;"><strong style="color:var(--text)">Compétences BUT mobilisées :</strong> <span style="color:var(--text)">Réaliser</span> (automatisation avec Maestro / Appium / Robot Framework), <span style="color:var(--text)">Optimiser</span> (amélioration de la couverture et de la fiabilité des tests), <span style="color:var(--text)">Conduire</span> (suivi des anomalies dans Jira / Squash, participation aux sprints Agile), <span style="color:var(--text)">Collaborer</span> (communication quotidienne avec les équipes dev, cérémonies Agile, coordination transverse).</p>
+    <div class="tag-list" style="margin-top:1rem">
+      <span class="tag">Maestro · YAML</span>
+      <span class="tag">Appium · Robot Framework</span>
+      <span class="tag">Squash TM</span>
+      <span class="tag">Jira</span>
+      <span class="tag violet">Cosmo</span>
+      <span class="tag violet">Equipage</span>
+      <span class="tag violet">Agile / Scrum</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STAGE METM ══════════ -->
+<hr class="divider">
+<section id="stage" class="reveal">
+  <span class="section-label">Volet stage · BUT 2</span>
+  <h2>Stage chez METM</h2>
+  <p class="section-intro">Janvier – Mars 2025 · Développeur stagiaire</p>
+
+  <div class="stage-band">
+    <h3>Contexte et missions principales</h3>
+    <p>METM est une structure spécialisée en informatique d'entreprise. Mes missions ont porté sur trois axes : automatisation de processus techniques, refonte d'une boutique e-commerce, et création d'un site vitrine interne. Ce stage a été ma première immersion professionnelle longue durée, et la confrontation avec des contraintes réelles (délais, attentes client, outils imposés) a été très formatrice.</p>
+  </div>
+
+  <div class="stage-grid">
+    <div class="stage-block">
+      <h4 class="blue">Missions réalisées</h4>
+      <ul>
+        <li>Script BAT d'automatisation du formatage de disques : temps réduit de 2–3 min à 10–15 sec</li>
+        <li>Refonte UI/UX d'une boutique Shopify avec PageSpeed Insights (SEO, accessibilité, performance)</li>
+        <li>Création d'un site vitrine pour un service informatique interne (Liquid, HTML/CSS)</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="positive">Points forts</h4>
+      <ul>
+        <li>Impact concret et mesurable dès la première semaine (script BAT)</li>
+        <li>Autonomie progressive : j'ai su identifier les besoins sans attendre qu'on me les dicte</li>
+        <li>Bonne adaptation à des outils nouveaux (Shopify Liquid, PageSpeed)</li>
+        <li>Communication régulière avec le tuteur, bilans hebdomadaires efficaces</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="warning">Points de vigilance</h4>
+      <ul>
+        <li>J'ai sous-estimé le temps nécessaire à la prise en main de Shopify Liquid en début de mission</li>
+        <li>Ma documentation en cours de développement était insuffisante — je rédigeais trop en fin de sprint</li>
+        <li>Gestion du temps : certaines tâches d'optimisation m'ont pris plus de temps que prévu, au détriment d'autres livrables</li>
+      </ul>
+    </div>
+    <div class="stage-block">
+      <h4 class="violet">Acquis pour la suite</h4>
+      <ul>
+        <li>Documenter au fil de l'eau, pas à la fin</li>
+        <li>Estimer les charges plus finement en découpant les tâches dès le départ</li>
+        <li>Ne pas hésiter à demander des clarifications tôt plutôt que de corriger tard</li>
+        <li>L'impact d'un script simple peut être énorme : toujours chercher l'automatisation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:1.5rem;">
+    <p style="color:var(--muted); font-size:0.92rem;"><strong style="color:var(--text)">Compétences BUT mobilisées durant le stage :</strong> Réaliser (développement du script et du site vitrine), Optimiser (performances Shopify, réduction du temps de traitement), Conduire (gestion autonome des missions, relation client), Collaborer (travail en coordination avec l'équipe technique). Le stage a également renforcé ma compétence Administrer via la manipulation directe d'environnements Windows en entreprise.</p>
+  </div>
+</section>
+
+<!-- ══════════ CONCLUSION ══════════ -->
+<hr class="divider">
+<section id="conclusion" class="reveal">
+  <span class="section-label">Bilan de fin de BUT</span>
+  <h2>Conclusion</h2>
+  <p class="section-intro">Ce que je retiens de ces trois années, honnêtement.</p>
+
+  <div class="conclu-grid">
+    <div class="conclu-block">
+      <div class="icon">✦</div>
+      <h4>Points forts identifiés</h4>
+      <p>Une polyvalence technique réelle (développement, data, QA) et la capacité à m'adapter à des contextes très différents — d'une TPE (METM) à un grand groupe (SNCF). Mes deux stages montrent que je sais prendre des responsabilités, communiquer avec des équipes et livrer des résultats concrets.</p>
+    </div>
+    <div class="conclu-block">
+      <div class="icon">⚠</div>
+      <h4>Points de vigilance</h4>
+      <p>La rigueur en matière de tests et de documentation, la tendance à sous-estimer les charges, et la difficulté à déléguer sont trois axes sur lesquels je progresse. Mon stage SNCF m'a déjà beaucoup appris sur la discipline des tests — ce qui était auparavant une faiblesse devient progressivement un point fort.</p>
+    </div>
+    <div class="conclu-block">
+      <div class="icon">→</div>
+      <h4>La suite : DICASI au CNAM</h4>
+      <p>En septembre 2026, j'intègre le programme DICASI au CNAM Paris pour devenir <strong style="color:var(--text)">chef de projet informatique</strong>. Ces trois années de BUT m'ont donné les fondations techniques ; le DICASI me donnera les compétences en pilotage, architecture SI et management pour assumer pleinement ce rôle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FORMATION ══════════ -->
+<hr class="divider">
 <section id="formation" class="reveal">
+  <span class="section-label">Parcours académique</span>
   <h2>Formation</h2>
   <div class="cards">
     <div class="card">
-      <h4>BUT Informatique</h4>
+      <h4>BUT Informatique · Parcours RACDV</h4>
       <p>IUT de Villetaneuse · Sorbonne Paris Nord</p>
-      <p>2023 – en cours · Parcours RACDV</p>
+      <p>2023 – en cours</p>
     </div>
     <div class="card">
       <h4>Baccalauréat Général</h4>
@@ -53,142 +458,106 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="reveal">
-  <h2>Expériences professionnelles</h2>
-  <div class="cards">
-    <div class="card">
-      <h4>Stagiaire développeur – METM</h4>
-      <span class="project-meta">Jan 2025 – Mars 2025</span>
-      <ul>
-        <li>Développement d’un script d’automatisation du formatage de disques en BAT (le formatage
-durait 2-3 min et dure à présent 10-15 sec).</li>
-        <li>Refonte UI/UX d’une boutique Shopify avec PageSpeed Insights : SEO, accessibilité,
-performance.</li>
-        <li>Création d’un site vitrine (Liquid, HTML/CSS) pour un service informatique interne</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PROJETS -->
+<!-- ══════════ PROJETS ══════════ -->
+<hr class="divider">
 <section id="projets" class="reveal">
+  <span class="section-label">Réalisations</span>
   <h2>Projets</h2>
 
-  <h3>Projets universitaires</h3>
+  <p style="color:var(--accent);font-family:'Space Grotesk',sans-serif;font-weight:600;margin:2rem 0 1rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.06em;">Projets universitaires</p>
   <div class="cards">
     <div class="card">
-      <h4>Application fullstack de réservation de vélos - React / Django / Leaflet</h4>
+      <h4>Application fullstack de réservation de vélos</h4>
+      <span class="project-meta">React · Django · Leaflet · PostgreSQL</span>
       <ul>
-        <li>Développement d’une application web inspirée de Vélib</li>
-        <li>Authentification des utilisateurs (inscription / connexion)</li>
-        <li>Réservation, annulation et historique des trajets</li>
-        <li>API REST développée avec Django et base de données PostgreSQL</li>
-        <li>Carte interactive des stations avec Leaflet</li>
-        <li>Filtres, validations côté serveur et gestion des erreurs</li>
+        <li>Application web inspirée de Vélib avec carte interactive</li>
+        <li>Authentification, réservation, historique des trajets</li>
+        <li>API REST + gestion des erreurs côté serveur</li>
         <li>Travail en équipe avec Git (branches, merges)</li>
       </ul>
     </div>
-
-  <div class="card">
-  <h4>NoSQL – Communication temps réel avec Redis (Pub/Sub)</h4>
-    <ul>
-      <li>Mise en place d’une base NoSQL avec Redis</li>
-      <li>Développement d’un Proof of Concept simulant une communication temps réel</li>
-      <li>Échange de messages entre un “manager” et un “livreur” via le modèle Pub/Sub</li>
-      <li>Manipulation des données avec Python</li>
-      <li>Interaction avec Redis pour tester la diffusion et la réception des messages</li>
-    </ul>
-  </div>
-
     <div class="card">
-      <h4>Base de données – PostgreSQL</h4>
+      <h4>Communication temps réel – Redis Pub/Sub</h4>
+      <span class="project-meta">NoSQL · Python · Redis</span>
       <ul>
-        <li>Analyse du besoin et modélisation (MCD / MLD)</li>
-        <li>Création des tables, clés primaires et étrangères</li>
-        <li>Import automatisé de données depuis des fichiers CSV</li>
-        <li>Rédaction de requêtes SQL complexes (jointures, agrégats)</li>
-        <li>Rédaction d’un rapport technique</li>
+        <li>PoC simulant une messagerie manager / livreur</li>
+        <li>Mise en place d'une base NoSQL avec Redis</li>
+        <li>Manipulation et diffusion de messages via Python</li>
       </ul>
     </div>
-
+    <div class="card">
+      <h4>Base de données PostgreSQL</h4>
+      <span class="project-meta">SQL · Modélisation</span>
+      <ul>
+        <li>Analyse du besoin et modélisation MCD / MLD</li>
+        <li>Import CSV automatisé, requêtes complexes (jointures, agrégats)</li>
+        <li>Rédaction d'un rapport technique</li>
+      </ul>
+    </div>
     <div class="card">
       <h4>Recueil des besoins & prototypage</h4>
+      <span class="project-meta">UX · Gestion de projet</span>
       <ul>
-        <li>Entretiens pour comprendre les besoins fonctionnels</li>
-        <li>Rédaction d’un cahier des charges</li>
-        <li>Définition des fonctionnalités principales</li>
-        <li>Réalisation d’un prototype avant développement</li>
+        <li>Entretiens utilisateurs, cahier des charges</li>
+        <li>Prototype interactif avant développement</li>
       </ul>
     </div>
   </div>
 
-  <h3>Projets personnels</h3>
+  <p style="color:var(--accent);font-family:'Space Grotesk',sans-serif;font-weight:600;margin:2.5rem 0 1rem;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.06em;">Projets personnels</p>
   <div class="cards">
     <div class="card">
       <h4>Machine Learning – Détection de spam</h4>
+      <span class="project-meta">Python · scikit-learn · TF-IDF</span>
       <ul>
-        <li>Projet de classification de messages SMS en Python</li>
-        <li>Prétraitement et nettoyage des données</li>
-        <li>Entraînement d’un modèle avec scikit-learn</li>
-        <li>Évaluation des performances (≈ 97 % de précision)</li>
+        <li>Classification de SMS (≈ 97 % de précision)</li>
+        <li>Prétraitement, nettoyage des données, évaluation du modèle</li>
       </ul>
     </div>
-
     <div class="card">
-      <h4>Application mobile sportive – Flutter</h4>
+      <h4>Application mobile sportive</h4>
+      <span class="project-meta">Flutter · Dart · SQLite</span>
       <ul>
-        <li>Développement d’une application mobile de suivi sportif</li>
-        <li>Création de profils utilisateurs et parcours d’onboarding</li>
-        <li>Stockage local sécurisé avec SQLite</li>
-        <li>Calcul d’indicateurs de santé (IMC, métabolisme)</li>
-        <li>Interfaces responsives basées sur des maquettes</li>
+        <li>Suivi sportif avec profils utilisateurs et onboarding</li>
+        <li>Calcul IMC / métabolisme, interfaces responsives</li>
       </ul>
     </div>
-
     <div class="card">
-      <h4>Jeu d’esquive de météorites – Python / Pygame</h4>
+      <h4>Jeu d'esquive de météorites</h4>
+      <span class="project-meta">Python · Pygame</span>
       <ul>
-        <li>Développement d’un jeu 2D avec Pygame</li>
-        <li>Contrôle d’un vaisseau spatial et déplacements en temps réel</li>
-        <li>Génération aléatoire de météorites</li>
-        <li>Gestion des collisions et du score</li>
-        <li>Boucle de jeu et logique temps réel</li>
+        <li>Jeu 2D temps réel, génération aléatoire, gestion des collisions</li>
       </ul>
-  </div>
-  <div class="card">
-  <h4>Application web interactive – Sensibilisation à la pollution des océans (Nuit de l’Info 2024)</h4>
-  <ul>
-    <li>Participation à la Nuit de l’Info – édition 2024 (défi national en équipe sur une nuit)</li>
-    <li>Développement d’une application web interactive de sensibilisation à la pollution des océans</li>
-    <li>Conception et intégration de l’interface en HTML, CSS et JavaScript</li>
-    <li>Mise en place de contenus pédagogiques interactifs pour informer l’utilisateur de manière ludique</li>
-    <li>Travail collaboratif en équipe avec répartition des rôles et gestion du temps sous contrainte</li>
-  </ul>
-</div>
+    </div>
+    <div class="card">
+      <h4>Sensibilisation pollution des océans</h4>
+      <span class="project-meta">Nuit de l'Info 2024 · HTML / CSS / JS</span>
+      <ul>
+        <li>Application web interactive produite en une nuit en équipe</li>
+        <li>Contenus pédagogiques ludiques, travail sous contrainte de temps</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- COMPETENCES -->
+<!-- ══════════ COMPÉTENCES TECHNIQUES ══════════ -->
+<hr class="divider">
 <section id="competences" class="reveal">
+  <span class="section-label">Stack technique</span>
   <h2>Compétences</h2>
-
-  <div class="cards">
-
+  <div class="skills-cols">
     <div class="card">
-      <h4>Développement web & mobile</h4>
+      <h4>Web & mobile</h4>
       <ul>
-        <li>Java, JavaScript, TypeScript</li>
+        <li>JavaScript, TypeScript</li>
         <li>React.js, Vue.js, Node.js</li>
         <li>Django REST, PHP</li>
         <li>Flutter / Dart</li>
         <li>HTML, CSS</li>
       </ul>
     </div>
-
     <div class="card">
-      <h4>Data & Machine Learning</h4>
+      <h4>Data & ML</h4>
       <ul>
         <li>Python</li>
         <li>pandas, scikit-learn</li>
@@ -196,90 +565,75 @@ performance.</li>
         <li>SQL</li>
       </ul>
     </div>
-
     <div class="card">
       <h4>Bases de données</h4>
       <ul>
         <li>PostgreSQL, MySQL</li>
-        <li>MongoDB</li>
-        <li>Redis</li>
+        <li>MongoDB, Redis</li>
         <li>SQLite</li>
       </ul>
     </div>
-
     <div class="card">
       <h4>DevOps & outils</h4>
       <ul>
         <li>Git / GitHub</li>
-        <li>Docker, Jenkins</li>
-        <li>CI / CD</li>
-        <li>Linux</li>
-        <li>VS Code, NetBeans</li>
-        <li>VirtualBox</li>
+        <li>Docker, Jenkins, CI/CD</li>
+        <li>Linux, VirtualBox</li>
       </ul>
     </div>
-
     <div class="card">
-      <h4>Méthodologies & systèmes</h4>
+      <h4>Méthodes</h4>
       <ul>
         <li>Agile / Scrum</li>
-        <li>Gestion de projet</li>
-        <li>Documentation, clean code</li>
-        <li>Serveur LAMP</li>
-        <li>Réseaux TCP/IP</li>
-        <li>Gestion des utilisateurs</li>
+        <li>Clean code, documentation</li>
+        <li>Serveur LAMP, TCP/IP</li>
       </ul>
     </div>
-
   </div>
 </section>
 
-<!-- LANGUES -->
+<!-- ══════════ LANGUES ══════════ -->
+<hr class="divider">
 <section class="reveal">
-  <h2>Langues</h2>
-  <div class="cards">
-    <div class="card">Anglais – B2</div>
-    <div class="card">Français – Bilingue</div>
-    <div class="card">Hindi – Courant</div>
-    <div class="card">Punjabi – Bilingue</div>
-    <div class="card">Espagnol – Scolaire</div>
+  <span class="section-label">Langues</span>
+  <h2>Compétences linguistiques</h2>
+  <div class="pill-list" style="margin-top:1rem">
+    <span class="pill">🇫🇷 Français – Bilingue</span>
+    <span class="pill">🇬🇧 Anglais – B2</span>
+    <span class="pill">🇮🇳 Hindi – Courant</span>
+    <span class="pill">Punjabi – Bilingue</span>
+    <span class="pill">🇪🇸 Espagnol – Scolaire</span>
   </div>
 </section>
 
-<!-- CENTRES -->
+<!-- ══════════ CENTRES D'INTÉRÊT ══════════ -->
+<hr class="divider">
 <section class="reveal">
-  <h2>Centres d’intérêt</h2>
-  <div class="cards">
-    <div class="card interest">🏑 Sport : rink hockey, musculation</div>
-    <div class="card interest">🎵 Musique : harmonium</div>
-    <div class="card interest">🏛️ Art & patrimoine</div>
-    <div class="card interest">🎬 Documentaires et films historiques</div>
-    <div class="card interest">🤝 Engagement associatif : Sikh Youth France</div>
+  <span class="section-label">En dehors du code</span>
+  <h2>Centres d'intérêt</h2>
+  <div class="pill-list" style="margin-top:1rem">
+    <span class="pill">🏑 Rink hockey · Musculation</span>
+    <span class="pill">🎵 Harmonium</span>
+    <span class="pill">🏛️ Art & patrimoine</span>
+    <span class="pill">🎬 Documentaires historiques</span>
+    <span class="pill">🤝 Sikh Youth France</span>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ══════════ CONTACT ══════════ -->
+<hr class="divider">
 <section id="contact" class="reveal">
+  <span class="section-label">Me contacter</span>
   <h2>Contact</h2>
-  <p>Email : jorawar.dulai@email.com</p>
-  <p>LinkedIn / GitHub à ajouter</p>
+  <div class="contact-card">
+    <p>📧 <a href="mailto:jorawar.dulai@email.com">jorawar.dulai@gmail.com</a></p>
+    <p>💼 LinkedIn · <span style="color:var(--muted)">Jorawar Singh Dulai</span></p>
+    <p>🐙 GitHub · <span style="color:var(--muted)">jorawardulai</span></p>
+  </div>
 </section>
 
 <footer>
-  © 2026 · Jorawar Dulai
+  © 2026 · Jorawar Dulai · Portfolio BUT 3 Informatique · IUT Villetaneuse
 </footer>
-
-<script>
-  const reveals = document.querySelectorAll(".reveal");
-  window.addEventListener("scroll", () => {
-    reveals.forEach(el => {
-      const top = el.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
